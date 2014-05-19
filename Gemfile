@@ -1,14 +1,10 @@
-# If you have OpenSSL installed, we recommend updating
-# the following line to use "https"
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
-gem "middleman", "~>3.1.6"
+gem "middleman", "~>3.3.2"
+gem "middleman-livereload", "~> 3.2.1"
 
-# Live-reloading plugin
-gem "middleman-livereload", "~> 3.1.0"
-
-gem 'rake'
 gem 'middleman-gh-pages'
+gem 'rake'
 
 # For faster file watcher updates on Windows:
 gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
