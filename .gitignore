@@ -18,3 +18,7 @@
 
 # Ignore rbenv
 .ruby-version
+
+# Ignore Sublime Text files
+*.sublime-project
+*.sublime-workspace
