@@ -1,0 +1,22 @@
+---
+title: Puppies
+date: 2014-06-11 19:00 UTC
+tags:
+---
+<section class="features-section">
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+      <div class="panel panel-default custom-panel">
+        <div class="panel-heading">
+          <h3>
+            Bloggy Bloggy Blog
+          </h3>
+        </div>
+        <div class="panel-body">
+          <p>Text Text Text</p> 
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>

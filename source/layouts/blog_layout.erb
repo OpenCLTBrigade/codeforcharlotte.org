@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- saved from url http://www.bootstraptor.com##########################################################################
+Don't remove this attribution!
+This template build on Bootstrap 3 Developer  Kit v.3.0. by @Bootstraptor
+Built with Bootstrap 3.0.* version/ part of Bootstraptor KIT
+Read usage license on for this template on http://www.bootstraptor.com
+##########################################################################
+-->
+<html lang="en">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title><%= current_page.data.title || "Code For Charlotte" %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <%= partial "header" %>
+
+  <body>
+<div class="wrap">
+  <%= partial "nav" %>
+  <section>
+    <div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="text-left col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h1>
+          <%= current_article.title %>
+        </h1>
+      </div>
+    </div>
+  </div>
+</div>
+    <%= yield %>
+	</section>
+	<section class="custom-footer">
+    <%= partial "footer" %>
+	</section>
+</div>
+
+<%= partial "javascripts" %>
+
+
+</body>
+</html>
+
+
