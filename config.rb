@@ -64,6 +64,10 @@ configure :build do
 
   # Use relative URLs
   activate :relative_assets
+  activate :blog do |blog|
+  # set options on blog
+end
+  
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
