@@ -15,23 +15,21 @@ Read usage license on for this template on http://www.bootstraptor.com
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <%= partial "header" %>
+    <%= partial "partials/header" %>
 
   <body>
 <div class="wrap">
-  <%= partial "nav" %>
+  <%= partial "partials/nav" %>
   <section>
     <%= yield %>
 	</section>
 	<section class="custom-footer">
-    <%= partial "footer" %>
+    <%= partial "partials/footer" %>
 	</section>
 </div>
 
-<%= partial "javascripts" %>
+<%= partial "partials/javascripts" %>
 
 
 </body>
 </html>
-
-
