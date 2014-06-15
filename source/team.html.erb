@@ -1,0 +1,42 @@
+---
+title:
+---
+
+<div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="text-left col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h1>Team</h1>
+            <span class="second-sm">Thank You!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="features-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xs-12">
+          <% data.team.each do | t | %>
+          <div class="panel panel-default custom-panel">
+            <div class="panel-heading">
+              <h3><%= t['type'].capitalize %></h3>
+            </div>
+            <div class="row">
+            <% unless t['person'].empty? %>
+              <% t['person'].each do |p| %>
+              <div class="col-sm-6 panel-body">
+                <%= image_tag "http://www.gravatar.com/avatar/"+Digest::MD5.hexdigest(p['email'].downcase)+".jpg?s=200&r=g&d=mm", :width => '200',
+           :class => 'img-responsive img-circle pull-left img-team' %>
+                <h4><%= p['name'] %></h4>
+                <%= p['bio'] %>
+              </div>
+              <% end %>
+            <% end %>
+            </div>
+          </div>
+          <% end %>
+        </div>
+      </div>
+      <hr />
+    </div>
