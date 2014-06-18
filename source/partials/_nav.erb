@@ -1,38 +1,42 @@
-<section>
-  <nav id="topnav" class="navbar navbar-fixed-top navbar-inverse" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#">Code For Charlotte</a>
-      </div>
-
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav">
-          <li class="active">
-          <a href="#top-section">Home</a>
-          </li>
-          <li>
-          <a href="http://forum.codeforcharlotte.org">Forum</a>
-          </li>
-          <li>
-          <a href="http://localwiki.net/charlotte/">Wiki</a>
-          </li>
-          <li>
-          <a href="http://www.meetup.com/Code-For-Charlotte">Meetup</a>
-          </li>
-          <li>
-          <a href="http://team-charlotte.tumblr.com/">Fellows</a>
-          </li>
-          <li>
-          <a href="https://github.com/CodeForCharlotte/codeforcharlotte.org">GitHub</a>
-          </li>
-        </ul>
-        <!--
-        <div class="nav navbar-nav navbar-right">
-          <a class="btn btn-danger navbar-btn">Sign up</a> <a class="btn btn-success navbar-btn">Sign in</a>
+    <section>
+      <nav id="topnav" class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Code For Charlotte</a>
+          </div>
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li class="active">
+                <%= link_to 'Home', '/' %>
+              </li>
+              <li>
+                <%= link_to 'Forum', 'http://forum.codeforcharlotte.org' %>
+              </li>
+              <li>
+                <%= link_to 'Wiki', 'http://localwiki.net/charlotte/' %>
+              </li>
+              <li>
+                <%= link_to 'Meetup', 'http://www.meetup.com/Code-For-Charlotte' %>
+              </li>
+              <li>
+                <%= link_to 'Fellows', 'http://team-charlotte.tumblr.com/' %>
+              </li>
+              <li>
+                <%= link_to 'GitHub', 'https://github.com/CodeForCharlotte/codeforcharlotte.org' %>
+              </li>
+            </ul>
+            <!--
+            <div class="nav navbar-nav navbar-right">
+              <a class="btn btn-danger navbar-btn">Sign up</a> <a class="btn btn-success navbar-btn">Sign in</a>
+            </div>
+            -->
+          </div>
         </div>
-        -->
-      </div>
-
-    </div>
-  </nav>
-</section>
+      </nav>
+    </section>

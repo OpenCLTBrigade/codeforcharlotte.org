@@ -8,45 +8,45 @@ layout: page
 <% content_for :jumbotron do %>
 <%= partial(:'partials/jumbotron', :locals => {:headline => 'New Members', :subheadline => 'Welcome' }) %>
 <% end %>
-          <div class="panel panel-default custom-panel">
-            <div class="panel-heading">
-              <h3>
-                Welcome!
-              </h3>
+            <div class="panel panel-default custom-panel">
+              <div class="panel-heading">
+                <h3>
+                  Welcome!
+                </h3>
+              </div>
+              <div class="panel-body">
+                <p>
+                  Below you'll find a list of the things we'd like new brigade members to do.  They are all important!
+                </p>
+                <p>
+                  Meetup will keep you up to date on when we have events that you can
+                  register for.  The forum is where all brigade members can discuss items
+                  of importance.  The mailing list will include timely updates regarding
+                  the progress we're making.  Our Localwiki represents one of our
+                  major contributions to the citizens.
+                </p>
+              </div>
             </div>
-            <div class="panel-body">
-              <p>
-                Below you'll find a list of the things we'd like new brigade members to do.  They are all important!
-              </p>
-              <p>
-                Meetup will keep you up to date on when we have events that you can
-                register for.  The forum is where all brigade members can discuss items
-                of importance.  The mailing list will include timely updates regarding
-                the progress we're making.  Our Localwiki represents one of our
-                major contributions to the citizens.
-              </p>
+            <hr />
+            <div class="panel panel-default custom-panel">
+              <div class="panel-heading">
+                <h3>
+                  Quick Checklist
+                </h3>
+              </div>
+              <div class="panel-body">
+                <p>
+                  <ul>
+                    <li>Sign up for <%= link_to 'Meetup', 'http://www.meetup.com/Code-For-Charlotte' %>.</li>
+                    <li>Register for the <%= link_to 'Forum', 'http://forum.codeforcharlotte.org/' %>.</li>
+                    <li><%= link_to 'Introduce Yourself', 'http://forum.codeforcharlotte.org/t/introductions-brigade-members/148' %>.</li>
+                    <li>Sign up for the <%= link_to 'Mailing List', 'http://eepurl.com/QKgqr' %>.</li>
+                    <li>Contribute to the <%= link_to 'LocalWiki', 'http://www.localwiki.net/charlotte/' %></li>
+                    <li>Find a project [coming soon]</li>
+                  </ul>
+                </p>
+              </div>
             </div>
-          </div>
-          <hr />
-          <div class="panel panel-default custom-panel">
-            <div class="panel-heading">
-              <h3>
-                Quick Checklist
-              </h3>
-            </div>
-            <div class="panel-body">
-              <p>
-                <ul>
-                  <li>Sign up for <%= link_to 'Meetup', 'http://www.meetup.com/Code-For-Charlotte' %>.</li>
-                  <li>Register for the <%= link_to 'Forum', 'http://forum.codeforcharlotte.org/' %>.</li>
-                  <li><%= link_to 'Introduce Yourself', 'http://forum.codeforcharlotte.org/t/introductions-brigade-members/148' %>.</li>
-                  <li>Sign up for the <%= link_to 'Mailing List', 'http://eepurl.com/QKgqr' %>.</li>
-                  <li>Contribute to the <%= link_to 'LocalWiki', 'http://www.localwiki.net/charlotte/' %></li>
-                  <li>Find a project [coming soon]</li>
-                </ul>
-              </p>
-            </div>
-          </div>
 <% content_for :sidebar do %>
 <%= partial(:'partials/sidebar') %>
 <% end %>
