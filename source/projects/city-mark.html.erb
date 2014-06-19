@@ -1,25 +1,27 @@
 ---
-title: A New City Mark
+title: A New City Mark | Code for Charlotte
+description:
+keywords:
+author:
+layout: page
 ---
+<% content_for :jumbotron do %>
+<%= partial(:'partials/jumbotron', :locals => {:headline => 'A New City Mark', :subheadline => 'Community Iconography' }) %>
+<% end %>
 
-<div class="jumbotron">
-  <div class="container">
-    <div class="row">
-      <div class="text-left col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h1>
-          A New Mark
-        </h1> <span class="second-sm">Community iconography</span>
+      <div class="panel panel-default custom-panel">
+        <div class="panel-heading">
+          <h3>
+            Yes We Can
+          </h3>
+        </div>
+        <div class="panel-body">
+          <img class="img-responsive" src="/images/no_crown.png" alt="[crown redacted]" style="margin: 0 auto 0 auto"/>
+          <p class="custom-paragr lead text-center">
+            We can't use the Charlotte crown. Let's make one we can use.
+          </p>
+        </div>
       </div>
-
-    </div>
-
-  </div>
-</div>
-  </section>
-  <section class="features-section">
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
       <div class="panel panel-default custom-panel">
         <div class="panel-heading">
           <h3>
@@ -114,26 +116,6 @@ title: A New City Mark
           <%= partial "partials/mark_list_subscribe" %>
         </div>
       </div>
-    </div>
-
-    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
-
-      <div class="panel panel-default custom-panel">
-        <div class="panel-heading">
-          <h3>
-            Yes We Can
-          </h3>
-        </div>
-        <div class="panel-body">
-          <img class="img-responsive img-rounded" src="/images/no_crown.png" alt="[crown redacted]" />
-          <p class="text-center custom-paragr lead">
-          We can't use the Charlotte crown.  Let's make one we can use.
-          </p>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-  <hr />
-</div>
+<% content_for :sidebar do %>
+<%= partial(:'partials/sidebar') %>
+<% end %>
