@@ -4,6 +4,7 @@ gem "middleman", "~>3.3.2"
 gem "middleman-livereload", "~> 3.2.1"
 
 gem 'middleman-gh-pages'
+gem "middleman-google-analytics"
 gem 'rake'
 gem "middleman-blog"
 
