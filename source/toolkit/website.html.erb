@@ -1,132 +1,162 @@
 ---
-title: Contributing to the website
+title: How to Contribute to Our Website | Code for Charlotte
+description:
+keywords:
+author:
+layout: page
 ---
+<% content_for :jumbotron do %>
+<%= partial(:'partials/jumbotron', :locals => {:headline => 'Our Website', :subheadline => 'How to Contribute' }) %>
+<% end %>
+            <div class="panel panel-default custom-panel">
+              <div class="panel-heading">
+                <h3>
+                  About our website
+                </h3>
+              </div>
+              <div class="panel-body">
+                <p>
+                  This website is constructed using the static-site generator technology <%= link_to 'Middleman','http://middlemanapp.com/' %>.
+                  Middleman helps make site maintenance easier by allowing for many programming techniques to be used to produce the HTML,
+                  rather than relying on a particular editor that might only be available for Windows or Mac, for example.  Middleman is open-soure,
+                  and written in Ruby, an open-source language.  We think it's just right!
+                </p>
+                <p>
+                  We also host our project on <%= link_to 'GitHub','http://www.github.com/' %> and use git for source control.
+                </p>
+                <p>
+                  The current look-and-feel is powered by <%= link_to 'Twitter Bootstrap','http://getbootstrap.com/' %>, and
+                  we use <%= link_to 'Font Awesome','http://fontawesome.io/' %> in a couple of places.
+                </p>
+                <p>
+                  This page describes how install middleman, and how to make contributions to this site.
+                </p>
+              </div>
+            </div>
 
-<div class="jumbotron">
-  <div class="container">
-    <div class="row">
-      <div class="text-left col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h1>
-          Our Website
-        </h1> <span class="second-sm">How to contribute</span>
-      </div>
+            <div class="panel panel-default custom-panel">
+              <div class="panel-heading">
+                <h3>
+                  Installing Middleman
+                </h3>
+              </div>
+              <div class="panel-body">
+                <h4>Windows</h4>
+                <ul>
+                  <li>
+                    Download The Windows Ruby 1.9 build <%= link_to 'here','http://railsinstaller.org/en' %>.  This download includes git.
+                  </li>
+                  <li>
+                    That should create a "Ruby on Rails Console" program in your start menu.  Run that.  At a command line, type <code>gem install middleman bundler</code>.
+                  </li>
+                  <li>
+                    You'll need a text editor.  We recommend the <%= link_to 'Sublime Text','http://www.sublimetext.com/2' %> editor, although any plain-text editor would be fine.
+                  </li>
+                </ul>
+                <h4>OS X</h4>
+                <ul>
+                  <li>
+                    Download XCode from the App Store (free).  Install the command-line utilities from the Preferences -> Downloads menu.  You may also be able to issue the command <code>xcode-select --install</code> in your Terminal program.
+                  </li>
+                  <li>
+                    Open up Terminal from Applications/Utilities, and install <%= link_to '','' %><a href="http://brew.sh/">Homebrew</a>
+                  </li>
+                  <li>
+                    <code>brew install git</code>
+                  </li>
+                  <li>
+                    Follow the Linux instructions to install ruby.
+                  </li>
+                </ul>
+                <h4>Linux</h4>
+                <ul>
+                  <li>
+                    Follow the "<%= link_to 'Basic GitHub Checkout','https://github.com/sstephenson/rbenv#basic-github-checkout' %>" installation instructions for rbenv.
+                  </li>
+                  <li>
+                    Install ruby-build <%= link_to 'as a plugin','https://github.com/sstephenson/ruby-build#installing-as-an-rbenv-plugin-recommended' %>
+                  </li>
+                  <li>
+                    <code>rbenv install 2.1.2</code> -- as of the current date, 2.1.2 is the most recent ruby available from ruby-build
+                  </li>
+                  <li>
+                    <code>gem install middleman</code>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-    </div>
+            <div class="panel panel-default custom-panel">
+              <div class="panel-heading">
+                <h3>
+                  Building the website
+                </h3>
+              </div>
+              <div class="panel-body">
+                <p>
+                  To acquire the website, you'll do something like this:
+                </p>
+                <pre>
+                  <code>
+                    mkdir Sites
+                    cd Sites
+                    git clone git@github.com:CodeForCharlotte/codeforcharlotte.org.git
+                    cd codeforcharlotte.org
+                    bundle
+                    bundle exec middleman server
+                  </code>
+                </pre>
+                <p>
+                  Depending on your Github setup, that last line might vary. View
+                  <%= link_to 'the repo','https://github.com/CodeForCharlotte/codeforcharlotte.org/' %>
+                  and reference those clone URL's to make sure that you're using the right one
+                  for you.
+                </p>
+                <p>
+                  After the above steps, you'll be able to load <%= link_to 'this page','http://127.0.0.1:4567/' %>
+                  and see a version of this page!  As long as the middleman server is running, any changes that you
+                  make to source pages will be available after a reload.
+                </p>
+              </div>
+            </div>
 
-  </div>
-</div>
-  </section>
-  <section class="features-section">
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-      <div class="panel panel-default custom-panel">
-        <div class="panel-heading">
-          <h3>
-            About our website
-          </h3>
-        </div>
-        <div class="panel-body">
-          <p>
-          This website is constructed using the static-site generator technology <a href="http://middlemanapp.com/">Middleman</a>.
-          Middleman helps make site maintenance easier by allowing for many programming techniques to be used to produce the HTML,
-          rather than relying on a particular editor that might only be available for Windows or Mac, for example.  Middleman is open-soure,
-          and written in Ruby, an open-source language.  We think it's just right!
-          </p>
-          <p>
-          We also host our project on <a href="http://www.github.com/">GitHub</a> and use git for source control.
-          </p>
-          <p>The current look-and-feel is powered by <a href="http://getbootstrap.com/">Twitter Bootstrap</a>, and 
-          we use <a href="http://fontawesome.io/">Font Awesome</a> in a couple of places.</p>
-          <p>This page describes how install middleman, and how to make contributions to this site.</p>
-        </div>
-      </div>
-
-      <div class="panel panel-default custom-panel">
-        <div class="panel-heading">
-          <h3>
-            Installing Middleman
-          </h3>
-        </div>
-        <div class="panel-body">
-          <h4>Windows</h4>
-          <ul>
-            <li>Download The Windows Ruby 1.9 build <a href="http://railsinstaller.org/en">here.</a>.  This download includes git.</li>
-            <li>That should create a "Ruby on Rails Console" program in your start menu.  Run that.  At a command line, type <code>gem install middleman bundler</code>.</li>
-            <li>You'll need a text editor.  We recommend the <a href="http://www.sublimetext.com/2">Sublime Text</a> editor, although any plain-text editor would be fine.</li>
-          </ul>
-          <h4>OS X</h4>
-          <ul>
-            <li>Download XCode from the App Store (free).  Install the command-line utilities from the Preferences -> Downloads menu.  You may also be able to issue the command <code>xcode-select --install</code> in your Terminal program.</li>
-            <li>Open up Terminal from Applications/Utilities, and install <a href="http://brew.sh/">Homebrew</a></li>
-            <li><code>brew install git</code></li>
-            <li>Follow the Linux instructions to install ruby.</li>
-          </ul>
-
-          <h4>Linux</h4>
-          <ul>
-            <li>Follow the "<a href="https://github.com/sstephenson/rbenv#basic-github-checkout">Basic GitHub Checkout</a>" installation instructions for rbenv.</li>
-            <li>Install ruby-build <a href="https://github.com/sstephenson/ruby-build#installing-as-an-rbenv-plugin-recommended">as a plugin</a></li>
-            <li><code>rbenv install 2.1.2</code> -- as of the current date, 2.1.2 is the most recent ruby available from ruby-build</li>
-            <li><code>gem install middleman</code></li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="panel panel-default custom-panel">
-        <div class="panel-heading">
-          <h3>
-            Building the website
-          </h3>
-        </div>
-        <div class="panel-body">
-          <p>To acquire the website, you'll do something like this:</p>
-          <pre><code>
-            mkdir Sites
-            cd Sites
-            git clone git@github.com:CodeForCharlotte/codeforcharlotte.org.git
-            cd codeforcharlotte.org
-            bundle
-            bundle exec middleman server
-          </code></pre>
-          <p>Depending on your Github setup, that last line might vary.  View
-          <a href="https://github.com/CodeForCharlotte/codeforcharlotte.org/">the repo</a>
-          and reference those clone URL's to make sure that you're using the right one
-          for you.
-          </p>
-          <p>After the above steps, you'll be able to load <a href="http://127.0.0.1:4567/">this page</a>
-            and see a version of this page!  As long as the middleman server is running, any changes that you
-          make to source pages will be available after a reload.
-          </p>
-        </div>
-      </div>
-
-    </div>
-
-    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
-
-      <div class="panel panel-default custom-panel">
-        <div class="panel-heading">
-          <h3>
-            References
-          </h3>
-        </div>
-        <div class="panel-body">
-          <p>
-          <ul>
-            <li><a href="https://github.com/CodeForCharlotte/codeforcharlotte.org/">Our Repo</a></li>
-            <li><a href="https://github.com/CodeForCharlotte/codeforcharlotte.org/issues">Open Issues</a></li>
-            <li><a href="http://railsinstaller.org/en">Ruby on Windows</a></li>
-            <li><a href="http://www.middlemanapp.com/">Middleman</a></li>
-            <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
-            <li><a href="http://fontawesome.io/">Font Awesome</a></li>
-            <li><a href="https://github.com/sstephenson/rbenv#basic-github-checkout">rbenv</a></li>
-            <li><a href="https://github.com/sstephenson/ruby-build#installing-as-an-rbenv-plugin-recommended">ruby-build</a></li>
-          </ul>
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div><hr />
-</div>
+            <div class="panel panel-default custom-panel">
+              <div class="panel-heading">
+                <h3>
+                  References
+                </h3>
+              </div>
+              <div class="panel-body">
+                <p>
+                  <ul>
+                    <li>
+                      <%= link_to 'Our Repository', 'https://github.com/CodeForCharlotte/codeforcharlotte.org/' %>
+                    </li>
+                    <li>
+                      <%= link_to 'Open Issues', 'https://github.com/CodeForCharlotte/codeforcharlotte.org/issues' %>
+                    </li>
+                    <li>
+                      <%= link_to 'Ruby on Windows', 'http://railsinstaller.org/en' %>
+                    </li>
+                    <li>
+                      <%= link_to 'Middleman', 'http://www.middlemanapp.com/' %>
+                    </li>
+                    <li>
+                      <%= link_to 'Bootstrap', 'http://getbootstrap.com/' %>
+                    </li>
+                    <li>
+                      <%= link_to 'Font Awesome', 'http://fontawesome.io/' %>
+                    </li>
+                    <li>
+                      <%= link_to 'rbenv', 'https://github.com/sstephenson/rbenv#basic-github-checkout' %>
+                    </li>
+                    <li>
+                      <%= link_to 'ruby build', 'https://github.com/sstephenson/ruby-build#installing-as-an-rbenv-plugin-recommended' %>
+                    </li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+<% content_for :sidebar do %>
+<%= partial(:'partials/sidebar') %>
+<% end %>
