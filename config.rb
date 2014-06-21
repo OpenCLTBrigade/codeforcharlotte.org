@@ -39,11 +39,17 @@
 # activate :livereload
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+  helpers do
+    def nav_link_to(link, url, opts={})
+      if current_resource.url == url_for(url)
+        prefix = '<li class="active">'
+      else
+        prefix = '<li>'
+      end
+      prefix + link_to(link, url, opts) + "</li>"
+    end
+  end
+
 
 set :css_dir, 'stylesheets'
 
