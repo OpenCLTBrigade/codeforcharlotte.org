@@ -25,3 +25,7 @@
       name: "Tom Brooke"
       email: tom.brooke@gmail.com
       bio: "Ruby developer, lawyer"
+    -
+      name: "Adam Parker"
+      email: atomparker@gmail.com
+      bio: "former/aspiring developers, project-program-product manager, cat herder, curious george"
