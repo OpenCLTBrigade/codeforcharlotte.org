@@ -59,6 +59,20 @@ author:
         </div>
       </div>
       <div class="row">
+        <% blog.articles[0...5].each do |article| %>
+  <article>
+    <h1>
+      <a href="<%= article.url %>"><%= article.title %></a>
+      <time><%= article.date.strftime('%b %e %Y') %></time>
+    </h1>
+
+    <%= article.summary %>
+
+    <a href="<%= article.url %>">Read more</a>
+  </article>
+<% end %>
+      </div>
+      <div class="row">
         <div class="col-xs-12 col-sm-4">
           <div class="panel panel-default custom-panel">
             <div class="panel-heading">
