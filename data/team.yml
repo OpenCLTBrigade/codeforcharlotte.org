@@ -29,3 +29,7 @@
       name: "Michael"
       email:
       bio: "Have been on the bleeding edge of GIS R & D and UX/UI for many moons..."
+    -
+      name: "Adam Parker"
+      email: atomparker@gmail.com
+      bio: "former/aspiring developers, project-program-product manager, cat herder, curious george"
