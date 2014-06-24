@@ -1,67 +1,52 @@
 ---
-title: 
+title: New Members | Code for Charlotte
+description:
+keywords:
+author:
+layout: page
 ---
-
-<div class="jumbotron">
-  <div class="container">
-    <div class="row">
-      <div class="text-left col-xs-12 col-sm-12 col-md-12 col-lg-12">
-        <h1>
-          New Members
-        </h1> <span class="second-sm">Welcome!</span>
-      </div>
-
-    </div>
-
-  </div>
-</div>
-  </section>
-  <section class="features-section">
-<div class="container">
-  <div class="row">
-    <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-      <div class="panel panel-default custom-panel">
-        <div class="panel-heading">
-          <h3>
-            Welcome!
-          </h3>
-        </div>
-        <div class="panel-body">
-          <p>
-          In the sidebar, you'll find a list of the things we'd like new brigade members to do.  They are all important!
-          </p>
-          <p>Meetup will keep you up to date on when we have events that you can 
-          register for.  The forum is where all brigade members can discuss items 
-          of importance.  The mailing list will include timely updates regarding 
-          the progress we're making.  Our Localwiki represents one of our 
-          major contributions to the citizens.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-sm-4 col-md-4 col-lg-4 col-xs-12">
-
-      <div class="panel panel-default custom-panel">
-        <div class="panel-heading">
-          <h3>
-            Quick Checklist
-          </h3>
-        </div>
-        <div class="panel-body">
-          <p>
-          <ul>
-            <li>Sign up for <a href="http://www.meetup.com/Code-For-Charlotte">Meetup</a>.</li>
-            <li>Register for the <a href="http://forum.codeforcharlotte.org/">Forum</a>.</li>
-            <li><a href="http://forum.codeforcharlotte.org/t/introductions-brigade-members/148">Introduce yourself</a>.</li>
-            <li>Sign up for the <a href="http://eepurl.com/QKgqr">Mailing List</a>.</li>
-            <li>Contribute to the <a href="http://www.localwiki.net/charlotte/">LocalWiki</a></li>
-            <li>Find a project [coming soon]</li>
-          </ul>
-
-          </p>
-        </div>
-      </div>
-
-    </div>
-  </div><hr />
-</div>
+<% content_for :jumbotron do %>
+<%= partial(:'partials/jumbotron', :locals => {:headline => 'New Members', :subheadline => 'Welcome' }) %>
+<% end %>
+            <div class="panel panel-default custom-panel">
+              <div class="panel-heading">
+                <h3>
+                  Welcome!
+                </h3>
+              </div>
+              <div class="panel-body">
+                <p>
+                  Below you'll find a list of the things we'd like new brigade members to do.  They are all important!
+                </p>
+                <p>
+                  Meetup will keep you up to date on when we have events that you can
+                  register for.  The forum is where all brigade members can discuss items
+                  of importance.  The mailing list will include timely updates regarding
+                  the progress we're making.  Our Localwiki represents one of our
+                  major contributions to the citizens.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <div class="panel panel-default custom-panel">
+              <div class="panel-heading">
+                <h3>
+                  Quick Checklist
+                </h3>
+              </div>
+              <div class="panel-body">
+                <p>
+                  <ul>
+                    <li>Sign up for <%= link_to 'Meetup', 'http://www.meetup.com/Code-For-Charlotte' %>.</li>
+                    <li>Register for the <%= link_to 'Forum', 'http://forum.codeforcharlotte.org/' %>.</li>
+                    <li><%= link_to 'Introduce Yourself', 'http://forum.codeforcharlotte.org/t/introductions-brigade-members/148' %>.</li>
+                    <li>Sign up for the <%= link_to 'Mailing List', 'http://eepurl.com/QKgqr' %>.</li>
+                    <li>Contribute to the <%= link_to 'LocalWiki', 'http://www.localwiki.net/charlotte/' %></li>
+                    <li>Find a project [coming soon]</li>
+                  </ul>
+                </p>
+              </div>
+            </div>
+<% content_for :sidebar do %>
+<%= partial(:'partials/sidebar') %>
+<% end %>

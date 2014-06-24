@@ -1,0 +1,32 @@
+---
+title: Team | Code for Charlotte
+description:
+keywords:
+author:
+layout: page
+---
+<% content_for :jumbotron do %>
+<%= partial(:'partials/jumbotron', :locals => {:headline => 'Team', :subheadline => 'Thank You!' }) %>
+<% end %>
+<% data.team.each do | t | %>
+          <div class="panel panel-default custom-panel">
+            <div class="panel-heading">
+              <h3><%= t['type'].capitalize %></h3>
+            </div>
+            <div class="row">
+            <% unless t['person'].empty? %>
+              <% t['person'].each do |p| %>
+              <div class="col-sm-6 panel-body">
+                <%= image_tag 'http://www.gravatar.com/avatar/'+Digest::MD5.hexdigest(p['email'].downcase)+'.jpg?s=200&r=g&d=mm', :width => '200',
+           :class => 'img-responsive img-circle pull-left img-team' %>
+                <h4><%= p['name'] %></h4>
+                <%= p['bio'] %>
+              </div>
+              <% end %>
+            <% end %>
+            </div>
+          </div>
+<% end %>
+<% content_for :sidebar do %>
+<%= partial(:'partials/sidebar') %>
+<% end %>
