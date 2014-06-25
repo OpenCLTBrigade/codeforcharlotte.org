@@ -2,36 +2,17 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-6 col-lg-7">
-            <div class="row">
-<!--
-              <div class="col-sm-4 col-xs-6">
-                <div>
-                  <ul class="list-unstyled">
-                    <h2>More Info</h2>
-                    <li>
-                      <%= link_to 'About Us', '/about-us.html' %>
-                    </li>
-                    <li>
-                      <%= link_to 'New Members', '/new-members.html' %>
-                    </li>
-                  </ul>
-                </div>
-              </div>
--->
-              <div class="col-sm-4 col-xs-6">
-                <div>
-                  <ul class="list-unstyled">
-                    <h2>Contribute</h2>
-                    <li>
-                      <%= link_to 'Website', '/toolkit/website.html' %>
-                    </li>
-                    <li>
-                      <%= link_to 'City Mark', '/projects/city-mark.html' %>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            <h2>Recent Blog Posts</h2>
+            <% blog.articles[0...5].each do |article| %>
+              <article>
+                <h5>
+                  <% link_to article.url do %>
+                    <%= article.title %></a>
+                    <time><%= article.date.strftime('%b %e %Y') %></time>
+                  <% end %>    
+                </h5>
+              </article>
+            <% end %>
           </div>
           <div class="col-xs-6 col-lg-5">
             <span class="text-right">
