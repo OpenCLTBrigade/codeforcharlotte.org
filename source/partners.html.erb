@@ -1,0 +1,35 @@
+---
+title: Partners | Code for Charlotte
+description:
+keywords:
+author:
+layout: page
+---
+<% content_for :jumbotron do %>
+<%= partial(:'partials/jumbotron', :locals => {:headline => 'Partners', :subheadline => 'Joined with Code for Charlotte' }) %>
+<% end %>
+            <div class="panel panel-default custom-panel">
+              <div class="panel-heading">
+                <h3>Partners</h3>
+              </div>
+              <div class="row">
+                <% data.partners.each do | p | %>
+                <div class="col-sm-6">
+                  <div class="panel-body">
+                    <h4 class="text-center">
+                      <%= link_to p['name'], p['url'] %>
+                    </h4>
+                    <h4>
+                      <small>
+                        <%= p['description'] %>
+                      </small>
+                    </h4>
+                    <%= p['motivation'] %>
+                  </div>
+                </div>
+                <% end %>
+              </div>
+            </div>
+<% content_for :sidebar do %>
+<%= partial(:'partials/sidebar') %>
+<% end %>

@@ -1,0 +1,27 @@
+---
+-
+  type: captains
+  person:
+    -
+      name: "Jim Van Fleet"
+      email: jim@jimvanfleet.com
+      bio: "Owns a software consultancy, and is a leader in the entrepreneurship community in Charlotte."
+    -
+      name: "Jill Bjers"
+      email: jill.bjers@gmail.com
+      bio: "Leads government outreach and our events calendar"
+-
+  type: members
+  person:
+    -
+      name: "Scott Lundgren"
+      email: me@scottelundgren.com
+      bio: "Listener. Developer. Linux System Administrator. DevOps/Continuous Integration Kool-Aid Drinker. Runner. Foodie. Registered Yoga Teacher. Vanderbilt Alum."
+    -
+      name: "Chris Sunde"
+      email: ""
+      bio: "Civil Engineer, budding coder"
+    -
+      name: "Tom Brooke"
+      email: tom.brooke@gmail.com
+      bio: "Ruby developer, lawyer"

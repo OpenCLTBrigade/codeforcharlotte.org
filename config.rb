@@ -72,17 +72,41 @@ page "/feed.xml", layout: false
 # activate :livereload
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+  helpers do
+    def nav_link_to(link, url, opts={})
+      if current_resource.url == url_for(url)
+        prefix = '<li class="active">'
+      else
+        prefix = '<li>'
+      end
+      prefix + link_to(link, url, opts) + "</li>"
+    end
+  end
+
 
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+
+# Google Analytics
+activate :google_analytics do |ga|
+  # Property ID (default = nil)
+  ga.tracking_id = 'UA-51227922-3'
+  # Removing the last octet of the IP address (default = false)
+  ga.anonymize_ip = false
+  # Tracking across a domain and its subdomains (default = nil)
+  ga.domain_name = 'codeforcharlotte.org'
+  # Tracking across multiple domains and subdomains (default = false)
+  ga.allow_linker = false
+  # Tracking Code Debugger (default = false)
+  ga.debug = false
+  # Tracking in development environment (default = true)
+  ga.development = false
+  # Compress the JavaScript code (default = false)
+  ga.minify = true
+end
 
 # Build-specific configuration
 configure :build do
@@ -96,7 +120,9 @@ configure :build do
   # activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
+
+
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
