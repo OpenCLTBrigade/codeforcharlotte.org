@@ -20,28 +20,17 @@
 -->
               <div class="col-sm-4 col-xs-6">
                 <div>
-                  <ul class="list-unstyled">
-                    <h2>Contribute</h2>
-                    <li>
-                      <%= link_to 'Website', '/toolkit/website.html' %>
-                    </li>
-                    <li>
-                      <%= link_to 'City Mark', '/projects/city-mark.html' %>
-                    </li>
-                  </ul>
-                  <h2>Our Blog</h2>
-                          <% blog.articles[0...5].each do |article| %>
-  <article>
-    <h1>
-      <a href="<%= article.url %>"><%= article.title %></a>
-      <time><%= article.date.strftime('%b %e %Y') %></time>
-    </h1>
-
-    <%= article.summary %>
-
-    <a href="<%= article.url %>">Read more</a>
-  </article>
-<% end %>
+                  <h2>Recent Blog Posts</h2>
+                  <% blog.articles[0...5].each do |article| %>
+                    <article>
+                      <h5>
+                        <% link_to article.url do %>
+                          <%= article.title %></a>
+                          <time><%= article.date.strftime('%b %e %Y') %></time>
+                        <% end %>    
+                      </h5>
+                    </article>
+                  <% end %>
                 </div>
               </div>
             </div>

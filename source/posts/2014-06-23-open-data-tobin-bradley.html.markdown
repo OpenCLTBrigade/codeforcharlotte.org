@@ -1,9 +1,10 @@
 ---
-title: Open Data - Tobin Bradley
+title: Open Data- Tobin Bradley
 date: 2014-06-23 19:00 UTC
 tags: opendata, meckco, tobin
 subtitle: From our conversation about open data
 ---
+
 
 Tobin is a GIS developer in Mecklenburg County.  He claims to "pretend" to develop software, but anybody who's got apps in production is a developer to us!  He is responsible for the first real open data in Mecklenburg County (and still the preponderance of county Open Data), available [here](http://maps.co.mecklenburg.nc.us/openmapping/).
 
