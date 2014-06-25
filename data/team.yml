@@ -19,9 +19,17 @@
       bio: "Listener. Developer. Linux System Administrator. DevOps/Continuous Integration Kool-Aid Drinker. Runner. Foodie. Registered Yoga Teacher. Vanderbilt Alum."
     -
       name: "Chris Sunde"
-      email: ""
+      email:
       bio: "Civil Engineer, budding coder"
     -
       name: "Tom Brooke"
       email: tom.brooke@gmail.com
       bio: "Ruby developer, lawyer"
+    -
+      name: "Michael"
+      email:
+      bio: "Have been on the bleeding edge of GIS R & D and UX/UI for many moons..."
+    -
+      name: "Adam Parker"
+      email: atomparker@gmail.com
+      bio: "brigade's Delivery Lead, Former/Aspiring Developer, Project-Program-Product manager, Cat Herder, Always Curious."
