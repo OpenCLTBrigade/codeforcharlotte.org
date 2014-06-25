@@ -16,3 +16,10 @@
 
 # Ignore .DS_store file
 .DS_Store
+
+# Ignore rbenv file
+.ruby-version
+
+# Ignore Sublime Text file
+codeforcharlotte.sublime-project
+codeforcharlotte.sublime-workspace
