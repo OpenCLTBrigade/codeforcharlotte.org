@@ -1,42 +1,80 @@
 ---
-title: Title | Code for Charlotte
+title: Media | Code for Charlotte
 description:
 keywords:
 author:
 layout: page
 ---
 <% content_for :jumbotron do %>
-<%= partial(:'partials/jumbotron', :locals => {:headline => 'Page Title', :subheadline => 'Page Subtitle' }) %>
+<%= partial(:'partials/jumbotron', :locals => {:headline => 'Media', :subheadline => 'Code for Charlotte in the News' }) %>
 <% end %>
             <div class="panel panel-default custom-panel">
               <div class="panel-heading">
                 <h3>
-                  Page Section
+                  Press
                 </h3>
               </div>
               <div class="panel-body">
-                <p>
-                  Paragraph Text
-                </p>
-                <p>
-                  Other Paragrah Text
-                </p>
+                <ul>
+                  <li>
+                    <%= link_to "Code For America's Charlotte Brigade Introduces Online Portal To Solve Community Problems", 'http://www.wccbcharlotte.com/rising/Code-For-Americas-Charlotte-Brigade-Introduces-Online-Portal-To-Solve-Community-Problems-264378601.html' %>,
+                    WCCB News Rising,
+                    <small>Tuesday, June 24th 8:26am</small>
+                  </li>
+                  <li>
+                    <%= link_to '‘Peace Corps For Geeks’ Brings Top Tech Minds To Help Charlotte', 'http://wfae.org/post/peace-corps-geeks-brings-top-tech-minds-help-charlotte' %>,
+                    WFAE,
+                   <small>Sunday June 22nd, 2014 11:06am</small>
+                  </li>
+                  <li>
+                    <%= link_to 'Hackathon Boosts Digitizing City Data to Next Step', 'http://www.charlotteobserver.com/2014/06/22/4996669/hackathon-boosts-digitizing-city.html#.U6iyz41dVYU' %>
+                    Charlotte Observer,
+                    <small>Sunday June 22nd, 2014</small>
+                  </li>
+                </ul>
               </div>
             </div>
             <hr />
             <div class="panel panel-default custom-panel">
               <div class="panel-heading">
                 <h3>
-                  Another Section
+                  Video
+                </h3>
+              </div>
+              <div class="panel-body text-center">
+                <h4>
+                  City of Charlotte
+                </h4>
+                <iframe width="640" height="360" src="//www.youtube.com/embed/0Mdpt1gwOaU?rel=0" frameborder="0" allowfullscreen></iframe>
+              </div>
+            </div>
+            <hr />
+            <div class="panel panel-default custom-panel">
+              <div class="panel-heading">
+                <h3>
+                  Image Galleries
+                </h3>
+              </div>
+              <div class="panel-body text-center">
+                <h4>Code for America Code Across Launch Event</h4>
+                <% link_to 'http://lew-harford.smugmug.com/photos/swfpopup.mg?AlbumID=37230501&AlbumKey=mGZnnD' do %>
+                  <%= image_tag 'http://lew-harford.smugmug.com/Other/Code-for-Charlotte/i-fGgHG45/0/M/_LEW8912-M.jpg',
+                   :alt => 'Jim Van Fleet kicks off the Code for Charlotte Code Across Launch Event'%>
+                <% end %>
+              </div>
+            </div>
+            <hr />
+            <div class="panel panel-default custom-panel">
+              <div class="panel-heading">
+                <h3>
+                  Blogs
                 </h3>
               </div>
               <div class="panel-body">
-                <p>
-                  Second Paragraph Text
-                </p>
-                <p>
-                  More Paragrah Text
-                </p>
+                <ul>
+                  <li>UNC Charlotte Ventureprise, <%= link_to 'Why is Code for America Abuzz for Charlotte’s Code for America Initiative?', 'http://ventureprise.org/index.php?cID=340&utm_source=Newsletter+August+2013&utm_campaign=205051b526-Quarter_3_August_2013_Newsletter8_19_2013&utm_medium=email&utm_term=0_27fe2aede6-205051b526-70627137' %></i>
+                  <li><%= link_to 'Code for America Charlotte Fellows', 'http://team-charlotte.tumblr.com/' %></i>
+                </ul>
               </div>
             </div>
 
