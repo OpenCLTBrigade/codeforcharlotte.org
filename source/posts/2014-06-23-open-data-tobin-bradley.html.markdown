@@ -1,5 +1,5 @@
 ---
-title: Open Data- Tobin Bradley
+title: Open Data - Tobin Bradley
 date: 2014-06-23 19:00 UTC
 tags: opendata, meckco, tobin
 subtitle: From our conversation about open data
