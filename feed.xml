@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2014-06-23T15:00:00-04:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>Open Data - Tobin Bradley</title>
+    <link rel="alternate" href="http://blog.url.com/2014/06/23/open-data-tobin-bradley.html"/>
+    <id>http://blog.url.com/2014/06/23/open-data-tobin-bradley.html</id>
+    <published>2014-06-23T15:00:00-04:00</published>
+    <updated>2014-06-25T23:36:34-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Tobin is a GIS developer in Mecklenburg County.  He claims to "pretend" to develop software, but anybody who's got apps in production is a developer to us!  He is responsible for the first real open data in Mecklenburg County (and still the preponderance of county Open Data), available &lt;a href="http://maps.co.mecklenburg.nc.us/openmapping/"&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;He provided &lt;a href="http://goo.gl/NjJXv2"&gt;this list&lt;/a&gt; of GIS-related open data tools and
+then proceeded through a short training session.  Some of the information is
+available at that link (which also allows for comments).&lt;/p&gt;
+
+&lt;p&gt;I will attempt to metion some additional data that came up during the meeting.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="http://www.nconemap.com/"&gt;NC One Map&lt;/a&gt;: Twyla will be a good ambassador to
+ the maintainers of this project.  I don't have the acronym handy, but she's
+ part of the "GIS Council of Elders" that maintain this asset.&lt;/li&gt;
+  &lt;li&gt;Check out OpenStreetMap's progression in Haiti after the earthquake there.
+ &lt;a href="http://imgur.com/eYCJ08V"&gt;After earthquake&lt;/a&gt;, &lt;a href="http://imgur.com/KuByKij"&gt;2 days later&lt;/a&gt;, &lt;a href="http://imgur.com/3kzNhjn"&gt;3 weeks later&lt;/a&gt; – Open data saved lives in Haiti.&lt;/li&gt;
+  &lt;li&gt;Base maps and overlay are the components of geographic data.  The base maps
+ are the images of the territory, and the affiliated data comprises the overlay.
+ You probably only want to create base maps if you are a real pro.&lt;/li&gt;
+  &lt;li&gt;The non-GIS specialists may want to pay special attention to &lt;a href="http://leafletjs.com/"&gt;Leaflet&lt;/a&gt;, a JavaScript library that supports geographic information presentation.&lt;/li&gt;
+  &lt;li&gt;Tobin uses &lt;a href="http://geoserver.org/"&gt;GeoServer&lt;/a&gt; and Digital Ocean to serve "massive" GeoJSON / KML etc. representations.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Free accounts are available at ARCGis, Google, and MapBox.&lt;/p&gt;
+
+&lt;p&gt;Remember that data is half of the code/data battle!&lt;/p&gt;
+</content>
+  </entry>
+</feed>
