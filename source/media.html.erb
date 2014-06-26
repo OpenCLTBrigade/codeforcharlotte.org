@@ -1,12 +1,11 @@
 ---
-title: Media | Code for Charlotte
+title: Media
+subtitle: Code for Charlotte in the News
 description:
-keywords:
-author:
 layout: page
 ---
 <% content_for :jumbotron do %>
-<%= partial(:'partials/jumbotron', :locals => {:headline => 'Media', :subheadline => 'Code for Charlotte in the News' }) %>
+<%= partial "partials/jumbotron" %>
 <% end %>
             <div class="panel panel-default custom-panel">
               <div class="panel-heading">
@@ -79,5 +78,5 @@ layout: page
             </div>
 
 <% content_for :sidebar do %>
-<%= partial(:'partials/sidebar') %>
+<%= partial "partials/sidebar" %>
 <% end %>

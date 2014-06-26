@@ -9,19 +9,12 @@ Read usage license on for this template on http://www.bootstraptor.com
 -->
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="<%= current_page.data.description %>">
-  <meta name="keywords" content="<%= current_page.data.keywords %>">
-  <meta name="author" content="<%= current_page.data.author %>">
-  <title><%= current_page.data.title || "Code For Charlotte" %></title>
 <%= partial "partials/header" %>
+  <title><%= current_page.data.title ? "#{current_page.data.title} | " : "" %>Code For Charlotte</title>
 <body>
 <%= partial "partials/facebook" %>
   <div class="wrap">
 <%= partial "partials/nav" %>
-<%= yield_content :jumbotron %>
 <%= yield %>
 <%= partial "partials/footer" %>
   </div>

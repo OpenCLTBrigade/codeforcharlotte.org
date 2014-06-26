@@ -1,12 +1,11 @@
 ---
-title: About | Code for Charlotte
+title: About
+subtitle: History and Mission
 description:
-keywords:
-author:
 layout: page
 ---
 <% content_for :jumbotron do %>
-<%= partial(:'partials/jumbotron', :locals => {:headline => 'About', :subheadline => 'History and Mission' }) %>
+<%= partial "partials/jumbotron" %>
 <% end %>
           <div class="panel panel-default custom-panel">
             <div class="panel-heading">
@@ -56,27 +55,6 @@ layout: page
               </p>
             </div>
           </div>
-<!--
-          <div class="panel panel-default custom-panel">
-            <div class="panel-heading">
-              <h3>
-                Our Team
-              </h3>
-            </div>
-            <div class="panel-body">
-              <p>
-                <dl>
-                  <dt>Twyla McDermott</dt>
-                  <dd>Twyla is in the City's Technology & Innovation department, and she is our primary contact with the City.</dd>
-                  <dt>Jim Van Fleet</dt>
-                  <dd>Brigade co-captain.  He owns a software consultancy, and is a leader in the entrepreneurship community in Charlotte.</dd>
-                  <dt>Jill Bjers</dt>
-                  <dd>Brigade co-captain.  She leads government outreach and our events calendar.</dd>
-                </dl>
-              </p>
-            </div>
-          </div>
--->
 <% content_for :sidebar do %>
-<%= partial(:'partials/sidebar') %>
+<%= partial "partials/sidebar" %>
 <% end %>

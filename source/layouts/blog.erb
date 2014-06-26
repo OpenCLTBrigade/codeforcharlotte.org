@@ -1,7 +1,5 @@
 <% wrap_layout :layout do %>
-<% content_for :jumbotron do %>
-<%= partial(:'partials/jumbotron', :locals => {:headline => current_article.data.title, :subheadline => current_article.data.subtitle }) %>
-<% end %>
+<%= partial "partials/jumbotron" %>
     <section class="features-section">
       <div class="container">
         <div class="row">
@@ -13,7 +11,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-4">
-<%= yield_content :sidebar %>
+<%= partial "partials/sidebar" %>
           </div>
         </div>
       </div>
