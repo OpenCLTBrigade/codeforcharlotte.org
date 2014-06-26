@@ -1,6 +1,6 @@
     <section class="custom-footer">
       <div class="container">
-        <div class="row">
+        <div class="row"  style="vertical-align: top">
           <div class="col-xs-6 col-lg-7">
             <h2>Recent Blog Posts</h2>
             <% blog.articles[0...5].each do |article| %>
@@ -9,7 +9,7 @@
                   <% link_to article.url do %>
                     <%= article.title %></a>
                     <time><%= article.date.strftime('%b %e %Y') %></time>
-                  <% end %>    
+                  <% end %>
                 </h5>
               </article>
             <% end %>
@@ -23,10 +23,12 @@
                 <abbr title="Phone">P:</abbr>
                 <%= link_to '(704) 951-RUBY', 'tel:7049517829' %>
               </address>
+<!--
               <address>
                 <strong>Full Name</strong><br />
                 <%= link_to 'first.last@example.com', '#' %>
               </address>
+-->
             </span>
           </div>
         </div>
