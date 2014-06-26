@@ -90,6 +90,10 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
+set :url_root, 'http://www.codeforcharlotte.org'
+
+activate :search_engine_sitemap
+
 # Google Analytics
 activate :google_analytics do |ga|
   # Property ID (default = nil)
