@@ -1,12 +1,11 @@
 ---
-title: Team | Code for Charlotte
+title: Team
+subtitle: Thank You!
 description:
-keywords:
-author:
 layout: page
 ---
 <% content_for :jumbotron do %>
-<%= partial(:'partials/jumbotron', :locals => {:headline => 'Team', :subheadline => 'Thank You!' }) %>
+<%= partial "partials/jumbotron" %>
 <% end %>
 <% data.team.each do | t | %>
           <div class="panel panel-default custom-panel">
@@ -25,5 +24,5 @@ layout: page
           </div>
 <% end %>
 <% content_for :sidebar do %>
-<%= partial(:'partials/sidebar') %>
+<%= partial "partials/sidebar" %>
 <% end %>

@@ -1,14 +1,13 @@
 ---
-title: How to Contribute to Our Website | Code for Charlotte
+title: Our Website
+subtitle: How to Contribute
 description:
-keywords:
-author:
 layout: page
 ---
 <% content_for :jumbotron do %>
-<%= partial(:'partials/jumbotron', :locals => {:headline => 'Our Website', :subheadline => 'How to Contribute' }) %>
+<%= partial "partials/jumbotron" %>
 <% end %>
-            <div class="panel panel-default custom-panel">
+          <div class="panel panel-default custom-panel">
               <div class="panel-heading">
                 <h3>
                   About our website
@@ -158,5 +157,5 @@ layout: page
               </div>
             </div>
 <% content_for :sidebar do %>
-<%= partial(:'partials/sidebar') %>
+<%= partial "partials/sidebar" %>
 <% end %>

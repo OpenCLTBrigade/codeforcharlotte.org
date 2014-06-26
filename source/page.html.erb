@@ -1,12 +1,11 @@
 ---
-title: Title | Code for Charlotte
+title: Title
+subtitle: Subtitle
 description:
-keywords:
-author:
 layout: page
 ---
 <% content_for :jumbotron do %>
-<%= partial(:'partials/jumbotron', :locals => {:headline => 'Page Title', :subheadline => 'Page Subtitle' }) %>
+<%= partial "partials/jumbotron" %>
 <% end %>
             <div class="panel panel-default custom-panel">
               <div class="panel-heading">
@@ -39,7 +38,6 @@ layout: page
                 </p>
               </div>
             </div>
-
 <% content_for :sidebar do %>
-<%= partial(:'partials/sidebar') %>
+<%= partial "partials/sidebar" %>
 <% end %>
