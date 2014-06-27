@@ -1,0 +1,22 @@
+---
+title: Educational Resources
+subtitle: Where to Go to Learn How to Do What We Do
+description:
+layout: page
+---
+<% content_for :jumbotron do %>
+<%= partial "partials/jumbotron" %>
+<% end %>
+<% data.resources.each do | r | %>
+          <div class="panel panel-default custom-panel">
+            <div class="panel-heading">
+              <h3 class="panel-title"><%= link_to r['name'], r['url'] %></h3>
+            </div>
+            <div class="panel-body">
+              <%= r['description'] %>
+            </div>
+          </div>
+<% end %>
+<% content_for :sidebar do %>
+<%= partial "partials/sidebar" %>
+<% end %>

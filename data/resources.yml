@@ -1,0 +1,65 @@
+---
+-
+  name: IT-oLogy
+  url: http://it-ology.org/
+  description: IT-oLogy is a non-profit, national organization committed to growing the IT talent pipeline and advancing the IT profession.
+-
+  name: code.org
+  url: http://code.org/
+  description: Code.org® is a non-profit dedicated to expanding participation in computer science by making it available in more schools, and increasing participation by women and underrepresented students of color.
+-
+  name: Tech Talent South
+  url: http://techtalentsouth.com/
+  description: Offers beginner focused 8-week programs to empower students with the skills to code, design, and ship dynamic web applications.
+-
+  name: Kids-N-Technology
+  url: http://www.kidsntechnology.net/
+  description: We are the original camp for ”build your own computer and take it home!" Building on our success, we offer multiple programs to meet the schedules and interests of students, parents, and teachers.
+-
+  name: Treehouse
+  url: https://teamtreehouse.com/
+  description: Learn from over 1000 videos created by our expert teachers on web design, coding, business, and much more. Charlotte Mecklenberg Library card holders can <a href="https://teamtreehouse.com/gateways/cml/signup">use the basic service for free</a>
+-
+  name: Girl Develop It! Charlotte
+  url:
+  description:
+-
+  name: Logical Advantage Tech Talks
+  url: http://www.meetup.com/Logical-Advantage-Charlotte-Tech-Talks/
+  description: We meet monthly during lunch to discuss and share information on a variety of technology topics centered around the web, mobile, cloud, or software architecture. We offer an excellent way to receive a technical education and meet with peers to get more out of the latest platforms, products, technologies, and resources.
+-
+  name: Skookum Free Friday Tech Talks
+  url: http://skookum.com/events/
+  description: Laid-back, bi-weekly discussions on technology or innovation topics ranging from robotics to the future of meat.
+-
+  name: Hackerspace Charlotte
+  url: http://hackerspacecharlotte.org
+  description:
+-
+  name: Charlotte UX
+  url: http://www.charlotteux.org
+  description: Charlotte UX is for anybody interested in learning more about creating a great user experience. Join us once a month as we get together to discuss user experience design, information architecture, copywriting, analytics, usability studies, sketching and wireframing and much more.
+-
+  name: Charlotte Front-End
+  url: http://www.charlottefed.com/
+  description: Dedicated to best practices, semantic markup, progressive enhancement & graceful degradation. Over the course of time and quite often we discuss HTML5, CSS, cross-browser support & testing, mobile, optimization techniques and much more.
+-
+  name: Charlotte ALT.NET
+  url: http://www.meetup.com/CharlotteAltNet/
+  description: A group of Charlotte developers interested in .NET and sharing knowledge about the best in software technology and practices.
+-
+  name: Charlotte Javascript
+  url: http://www.meetup.com/CharlotteJS/
+  description: The home for JavaScript enthusiasts in Charlotte, North Carolina. We are a group of developers and designers that get together and chit chat about the most used and misunderstood scripting language around.
+-
+  name: Charlotte Python
+  url: http://www.meetup.com/python-charlotte/
+  description: Meet other Python users, developers, and enthusiasts of all skill levels interested in discovering and sharing why the Python programming language is such a joy to work with.
+-
+  name: Charlotte Ruby
+  url: http://www.meetup.com/charlotte-rb/
+  description: Meet other Ruby programmers in Charlotte, and across the region.
+-
+  name: Queen City PHP
+  url: http://qcphp.org/
+  description: The official Charlotte PHP users group. We're a group of PHP developers and enthusiasts in Charlotte, NC.
