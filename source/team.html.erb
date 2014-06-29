@@ -12,14 +12,16 @@ layout: page
             <div class="panel-heading">
               <h3 class="panel-title"><%= t['type'].capitalize %></h3>
             </div>
-            <div class="row">
-            <% unless t['person'].empty? %>
-              <% has_no_email, has_email = t['person'].partition { | person | person['email'].blank? } %>
-              <% team_sorted_by_email_first = has_email.concat has_no_email %>
-              <% team_sorted_by_email_first.each do | s |  %>
-<%= partial(:'partials/team', :locals => {:name => s['name'], :email =>s['email'], :bio => s['bio'] }) %>
-              <% end %>
-            <% end %>
+            <div class="panel-body">
+              <div class="row">
+                <% unless t['person'].empty? %>
+                  <% has_no_email, has_email = t['person'].partition { | person | person['email'].blank? } %>
+                  <% team_sorted_by_email_first = has_email.concat has_no_email %>
+                  <% team_sorted_by_email_first.each do | s |  %>
+    <%= partial(:'partials/team', :locals => {:name => s['name'], :email =>s['email'], :bio => s['bio'] }) %>
+                  <% end %>
+                <% end %>
+              </div>
             </div>
           </div>
 <% end %>
