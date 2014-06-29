@@ -30,7 +30,7 @@ Read usage license on for this template on http://www.bootstraptor.com
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/FlatLand/assets/ico/apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="/FlatLand/assets/ico/apple-touch-icon-57-precomposed.png">
 
-  <title>New Members | Code For Charlotte</title>
+  <title>Contact | Code For Charlotte</title>
 <body>
   <!-- FB JavaScript SDK -->
   <div id="fb-root"></div>
@@ -75,7 +75,7 @@ Read usage license on for this template on http://www.bootstraptor.com
                   <li><a href="/projects/city-mark.html">City Mark</a></li>
                 </ul>
               </li>
-              <li class="active"><a href="/new-members.html">New Members</a></li>
+              <li><a href="/new-members.html">New Members</a></li>
               <li><a href="/media.html">Media</a></li>
               <li><a href="http://forum.codeforcharlotte.org">Forum</a></li>
               <li><a href="http://localwiki.net/charlotte/">Wiki</a></li>
@@ -98,9 +98,9 @@ Read usage license on for this template on http://www.bootstraptor.com
           <div class="row">
             <div class="text-left col-xs-12">
               <h1>
-                New Members
+                Contact
               </h1>
-              <span class="second-sm">Welcome</span>
+              <span class="second-sm"></span>
             </div>
           </div>
         </div>
@@ -113,64 +113,105 @@ Read usage license on for this template on http://www.bootstraptor.com
         <div class="row">
           <div class="col-xs-12 col-sm-8">
             <div class="panel panel-default custom-panel">
-              <div class="panel-heading">
-                <h3 class="panel-title">
-                  Welcome!
-                </h3>
-              </div>
               <div class="panel-body">
-                <p>
-                  Below you'll find a list of the things we'd like new brigade members to do.  They are all important!
-                </p>
-                <p>
-                  Meetup will keep you up to date on when we have events that you can
-                  register for.  The forum is where all brigade members can discuss items
-                  of importance.  The mailing list will include timely updates regarding
-                  the progress we're making.  Our Localwiki represents one of our
-                  major contributions to the citizens.
-                </p>
+                <form role="form" action="" id="ss-form" target="hidden_ifrome" onsubmit="">
+                  <div class="form-group">
+                    <label class="control-label" for="entry_123836606" aria-label="(Required field)">Name</label>
+                    <input class="form-control" type="text" name="entry.123836606" id="entry_123836606" value="" dir="auto" aria-label="Name Please Enter Your Full Name" aria-required="true">
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label" for="entry_759590637" aria-label="(Required field)">Email</label>
+                    <input class="form-control" type="email" name="entry.759590637" id="entry_759590637" value="" dir="auto" aria-label="Email Please Enter an Email Address" aria-required="true">
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label" for="entry_971019124" aria-label="(Required field)">Message</label>
+                    <textarea class="form-control" name="entry.971019124" id="entry_971019124" rows="6" cols="1" dir="auto" aria-label="Message Please Tell Us Your Question, Suggestion or Feedback" aria-required="true"></textarea>
+                  </div>
+                  <input type="hidden" name="draftResponse" value="[,,&quot;-5968625838562365954&quot;]">
+                  <input type="hidden" name="pageHistory" value="0">
+                  <input type="hidden" name="fbzx" value="-5968625838562365954">
+                  <input class="btn btn-default" type="submit" name="submit" value="Submit" id="ss-submit">
+                </form>
               </div>
+              <div class="lead text-center" id="confirm"></div>
             </div>
-            <hr />
-            <div class="panel panel-default custom-panel">
-              <div class="panel-heading">
-                <h3 class="panel-title">
-                  Quick Checklist
-                </h3>
-              </div>
-              <div class="panel-body">
-                <p>
-                  <ul>
-                    <li>Sign up for <a href="http://www.meetup.com/Code-For-Charlotte">Meetup</a>.</li>
-                    <li>Register for the <a href="http://forum.codeforcharlotte.org/">Forum</a>.</li>
-                    <li><a href="http://forum.codeforcharlotte.org/t/introductions-brigade-members/148">Introduce Yourself</a>.</li>
-                    <li>Sign up for the <a href="http://eepurl.com/QKgqr">Mailing List</a>.</li>
-                    <li>Contribute to the <a href="http://www.localwiki.net/charlotte/">LocalWiki</a></li>
-                    <li>Find a project [coming soon]</li>
-                  </ul>
-                </p>
-              </div>
-            </div>
-            <hr />
-            <div class="panel panel-default custom-panel">
-              <div class="panel-heading">
-                <h3 class="panel-title">
-                  Educational Resources
-                </h3>
-              </div>
-              <div class="panel-body">
-                <p>
-                  We've assembled the following list of <a href="/education.html">educational resources</a> to learn more about software development.
-                </p>
-              </div>
-            </div>
+            <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.12.0/jquery.validate.min.js"></script>
+            <script>
+              // override validate defaults for bootstrap use
+              $.validator.setDefaults({
+                  highlight: function(element) {
+                      $(element).closest('.form-group').addClass('has-error');
+                  },
+                  unhighlight: function(element) {
+                      $(element).closest('.form-group').removeClass('has-error');
+                  },
+                  errorElement: 'span',
+                  errorClass: 'help-block',
+                  errorPlacement: function(error, element) {
+                      if(element.parent('.input-group').length) {
+                          error.insertAfter(element.parent());
+                      } else {
+                          error.insertAfter(element);
+                      }
+                  }
+              });
+              $("#ss-form").validate({
+                rules: {
+                  "entry.123836606": {
+                    required: true,
+                    minlength: 2
+                  },
+                  "entry.759590637": {
+                    required: true,
+                    email: true
+                  },
+                  "entry.971019124": {
+                    required: true,
+                    minlength: 2
+                  }
+                },
+                messages: {
+                  "entry.123836606": {
+                    required: "Please enter your full name",
+                    minlength: "Your full name must be at least 2 characters long"
+                  },
+                  "entry.759590637": {
+                    required: "Please enter your email address",
+                    email: "Please enter a valid email address"
+                  },
+                  "entry.971019124": {
+                    required: "Please enter your question, suggestion or feedback",
+                    minlength: "Your question, suggestion, or feedback must be at least 2 characters long"
+                  }
+                },
+                submitHandler: function(form) {
+                  $.ajax({
+                      url: "https://docs.google.com/a/scottelundgren.com/forms/d/1YA0ncfucYKUalaufTUO7JYjPp3toQ_3Z1cJ5djBbX30/formResponse",
+                      data: {
+                        "entry.123836606":$('#entry_123836606').val(),
+                        "entry.759590637":$('#entry_759590637').val(),
+                        "entry.971019124":$('#entry_971019124').val()
+                      },
+                      dataType: "xml",
+                      type: "POST",
+                      statusCode: {
+                          0: function() {
+                            // CORS violation will happen
+                            // Data is inserted but use failure to confirm
+                            $('#confirm').html("Thank you for contacting us. We will follow up with you as soon as possible.")
+                            },
+                          200: function() {
+                              //Unlikely to not happen
+                          }
+                      }
+                    });
+                }
+              });
+            </script>
 
           </div>
           <div class="col-xs-12 col-sm-4">
-            <div class="fb-like-box" data-href="https://www.facebook.com/codeforcharlotte" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
-            <a class="twitter-timeline" href="https://twitter.com/CodeForCLT" data-widget-id="475414430839087104">Tweets by @CodeForCLT</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
 
           </div>
         </div>
