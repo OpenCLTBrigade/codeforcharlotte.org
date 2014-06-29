@@ -6,30 +6,20 @@
             <% blog.articles[0...5].each do |article| %>
               <article>
                 <h5>
-                  <% link_to article.url do %>
-                    <%= article.title %></a>
-                    <time><%= article.date.strftime('%b %e %Y') %></time>
-                  <% end %>
+                  <%= link_to article.title, article.url %>
+                  <time><%= article.date.strftime('%b %e %Y') %></time>
                 </h5>
               </article>
             <% end %>
           </div>
-          <div class="col-xs-6 col-lg-5">
-            <span class="text-right">
-              <address>
-                <strong>Code For Charlotte</strong><br />
-                809 W. Hill St, Charlotte, NC<br />
-                Charlotte, NC 28202<br />
-                <abbr title="Phone">P:</abbr>
-                <%= link_to '(704) 951-RUBY', 'tel:7049517829' %>
-              </address>
-<!--
-              <address>
-                <strong>Full Name</strong><br />
-                <%= link_to 'first.last@example.com', '#' %>
-              </address>
--->
-            </span>
+          <div class="col-xs-6 col-lg-5 text-right">
+            <address>
+              <strong>Code For Charlotte</strong><br />
+              809 W. Hill St, Charlotte, NC<br />
+              Charlotte, NC 28202<br />
+              <abbr title="Phone">P:</abbr>
+              <%= link_to '(704) 951-RUBY', 'tel:7049517829' %>
+            </address>
           </div>
         </div>
       </div>
