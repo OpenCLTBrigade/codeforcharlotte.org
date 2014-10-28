@@ -19,6 +19,10 @@
   name: Treehouse
   url: https://teamtreehouse.com/
   description: Learn from over 1000 videos created by our expert teachers on web design, coding, business, and much more. Charlotte Mecklenberg Library card holders can <a href="https://teamtreehouse.com/gateways/cml/signup">use the basic service for free</a>
+- 
+  name: Code School
+  url: https://www.codeschool.com/
+  description: Code School teaches web technologies in the comfort of your browser with video lessons, coding challenges, and screencasts. We strive to help you learn by doing.
 -
   name: Girl Develop It! Charlotte
   url:
