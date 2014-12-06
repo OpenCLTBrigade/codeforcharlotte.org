@@ -112,3 +112,19 @@ section.custom-footer address{
 .panel-body {
   padding: 15px;
 }
+
+/* Styles for lists of instructions */
+.instructions-list {
+    font-size: 1.2em;
+    line-height: 1.2;
+}
+
+.instructions-list li {
+    border-bottom: 1px dotted #fff;
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.instructions-list img {
+    padding-top: 1em;
+}
