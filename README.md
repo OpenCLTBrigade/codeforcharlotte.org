@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/codeforcharlotte/codeforcharlotte.org.png?label=ready&title=Ready)](https://waffle.io/codeforcharlotte/codeforcharlotte.org)
 # CodeForCharlotte.org
 
 This is the repo for the Code for Chalotte local brigade website. It serves as a central point to aggregate information from the various sub-groups and projects.
